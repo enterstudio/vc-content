@@ -970,8 +970,9 @@ textarea.__error
 .__responsive
 {
     margin: 0 auto;
+    padding: 0 10px;
     position: relative;
-    width: 970px;
+    width: 960px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
