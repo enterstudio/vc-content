@@ -970,9 +970,8 @@ textarea.__error
 .__responsive
 {
     margin: 0 auto;
-    padding: 0 10px;
     position: relative;
-    width: 960px;
+    width: 970px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -1381,9 +1380,6 @@ textarea.__error
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-
-    -webkit-justify-content: space-between;
-            justify-content: space-between;
 }
 
 .dropdown-inner .col-1,
@@ -1488,7 +1484,7 @@ textarea.__error
 .dropdown-inner .dropdown-t
 {
     color: #fcb040;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin: 0 0 20px;
     text-transform: uppercase;
@@ -1501,7 +1497,7 @@ textarea.__error
 
 .dropdown-inner .dropdown-item .dropdown-link
 {
-    font-size: 16px;
+    font-size: 14px;
     height: auto;
     word-spacing: 0px;
 }
@@ -6506,6 +6502,7 @@ ul.tags-list
         .footer-wrap .column .links
         {
             float: left;
+            padding: 0;
             width: 125px;
         }
 

@@ -78,6 +78,14 @@ var VC = {
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(gcse, s);
         }
+    },
+
+    youtubePlay: function(self) {
+        var $video = $('#video'),
+            src = $video.attr('src');
+
+        self.parent().addClass('played');
+        $video.attr('src', src + '&autoplay=1');
     }
 }
 
@@ -180,5 +188,11 @@ $(function () {
 
     if ($('[name="Contact[JobId]"]').length > 0) {
         $('[name="Contact[JobId]"]').val(VC.getParameterByName("jid"));
-    }    
+    }
+
+    $('.mac .play').on('click', function() {
+        var self = $(this);
+
+        VC.youtubePlay(self);
+    });
 });
