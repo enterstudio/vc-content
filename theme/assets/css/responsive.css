@@ -289,6 +289,16 @@
             font-size: 20px;
         }
 
+    .enterprise
+    {
+        height: 390px;
+    }
+
+    .enterprise .section-descr
+    {
+        margin: 70px 0 40px;
+    }
+
     .enterprise .section-actions
     {
         -webkit-flex-direction: row;
