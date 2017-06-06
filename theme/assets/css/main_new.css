@@ -263,6 +263,12 @@ a
 	width: 475px;
 }
 
+.enterprise .mac iframe
+{
+	height: 100%;
+	width: 100%;
+}
+
 .costumers
 {
 	padding: 100px 0 80px;
@@ -383,6 +389,7 @@ a
 	display: inline-block;
 	height: 125px;
 	margin: 0 0 15px;
+	padding: 0;
 	position: relative;
 	width: 125px;
 }
