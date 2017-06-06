@@ -413,7 +413,7 @@ a
 	font-weight: 600;
 }
 
-.no-touch .links .link-name:hover
+.no-touch .links .link:hover .link-name
 {
 	color: #ea5564;
 }
