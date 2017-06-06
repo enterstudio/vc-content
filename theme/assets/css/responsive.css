@@ -2696,6 +2696,11 @@
     {
         margin: 0;
     }
+
+    .costumers .list-pic
+    {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 640px)
