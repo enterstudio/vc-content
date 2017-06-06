@@ -289,6 +289,22 @@
             font-size: 20px;
         }
 
+    .enterprise .section-actions
+    {
+        -webkit-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .enterprise .section-actions .button
+    {
+        margin: 20px 20px 0 0;
+    }
+
+    .enterprise .mac
+    {
+        bottom: -130px;
+    }
+
     /* Footer */
     /*.footer-wrap .column .dev .menu + .menu
     {
@@ -2483,7 +2499,19 @@
 
     .enterprise .mac
     {
-        display: none;
+        background: none;
+        border: 5px solid #fff;
+        display: inline-block;
+        height: auto;
+        position: static;
+        width: auto;
+    }
+
+    .enterprise .mac .inner
+    {
+        height: auto;
+        position: static;
+        width: auto;
     }
 
     .enterprise .section-actions

@@ -308,7 +308,6 @@ a
 	background-size: cover;
 	color: #fff;
 	font-size: 18px;
-	font-weight: 300;
 	height: 290px;
 	line-height: 1.2;
 	position: relative;
@@ -409,8 +408,14 @@ a
 
 .links .link-name
 {
+	color: #363636;
 	font-size: 18px;
 	font-weight: 600;
+}
+
+.no-touch .links .link-name:hover
+{
+	color: #ea5564;
 }
 
 .links .link-img.cloud::after
