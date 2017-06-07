@@ -295,6 +295,18 @@ a
 	padding: 20px;
 	text-align: center;
 	width: 20%;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	-webkit-align-items: center;
+			align-items: center;
+
+	-webkit-justify-content: center;
+			justify-content: center;
 }
 
 .costumers .list-pic
