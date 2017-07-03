@@ -1264,6 +1264,67 @@
         margin: 0 0 20px;
     }
 
+    .new .enterprise-edition .list-ico
+    {
+    	background-size: 100px 200px;
+    	height: 100px;
+    	min-width: 100px;
+    	width: 100px;
+    }
+
+    .new .enterprise-edition .list-descr
+    {
+    	font-size: 14px;
+    }
+
+    .new .enterprise-advantages .col
+    {
+    	width: 100%;
+    }
+
+    .new .enterprise-advantages .col + .col
+    {
+    	margin: 40px 0 0;
+    }
+
+    .learn-more .features .list-item
+    {
+    	padding: 10px;
+    	width: 50%;
+    }
+
+    .learn-more .technologies .list-item
+    {
+    	margin: 30px 0 0;
+    	width: 100%;
+    }
+
+    .new .pricing .list-item
+    {
+    	width: 100%;
+    }
+
+    .new .pricing .list-item + .list-item
+    {
+    	margin: 40px 0 0;
+    }
+
+    .new .team .list-pic
+    {
+    	min-width: 150px;
+    }
+
+    .customers .list-item
+    {
+    	width: 100%;
+    }
+
+    .new .solutions-partner .list-item
+    {
+    	-webkit-flex-direction: column;
+    			flex-direction: column;
+    }
+
     /* Footer */
     .footer-wrap
     {
@@ -2623,6 +2684,73 @@
         background-position: -150px 0;
     }
 
+    .new .enterprise-edition .list-ico
+    {
+    	background-size: 100px 200px;
+    	height: 100px;
+    	min-width: 100px;
+    	width: 100px;
+    }
+
+    .new .enterprise-edition .list-descr
+    {
+    	font-size: 14px;
+    }
+
+    .new .enterprise-advantages .col
+    {
+    	width: 100%;
+    }
+
+    .new .enterprise-advantages .col + .col
+    {
+    	margin: 40px 0 0;
+    }
+
+    .learn-more .features .list-item
+    {
+    	padding: 10px;
+    	width: 50%;
+    }
+
+    .learn-more .technologies .list-item
+    {
+    	margin: 30px 0 0;
+    	width: 100%;
+    }
+
+    .new .pricing .list-item
+    {
+    	width: 100%;
+    }
+
+    .new .pricing .list-item + .list-item
+    {
+    	margin: 40px 0 0;
+    }
+
+    .new .team .list-item
+    {
+    	-webkit-flex-direction: column;
+    			flex-direction: column;
+    }
+
+    .new .team .list-pic
+    {
+    	min-width: 150px;
+    }
+
+    .customers .list-item
+    {
+    	width: 100%;
+    }
+
+    .new .solutions-partner .list-item
+    {
+    	-webkit-flex-direction: column;
+    			flex-direction: column;
+    }
+
     /* Footer */
     .footer-wrap
     {
@@ -2898,6 +3026,24 @@
     {
         margin: 10px 0 0;
         width: 100%;
+    }
+
+    .new .customers .list
+    {
+    	margin: 0;
+    	max-width: 100%;
+    }
+
+    .new .pricing .list-item,
+    .new .pricing .cols
+    {
+    	-webkit-flex-direction: column;
+    			flex-direction: column;
+    }
+
+    .new .pricing .col
+    {
+    	width: 100%;
     }
 }
 
