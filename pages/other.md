@@ -122,28 +122,28 @@ tags :
 			<div class="section-t">Learn more</div>
 			<ul class="list features">
 				<li class="list-item">
-					<div class="list-inner">
+					<a class="list-inner" href="/features/for-business-professionals">
 						<div class="list-ico"></div>
 						<div class="list-name">Business features</div>
-					</div>
+					</a>
 				</li>
 				<li class="list-item">
-					<div class="list-inner">
+					<a class="list-inner" href="/our-offers/community-edition">
 						<div class="list-ico"></div>
 						<div class="list-name">Community edition</div>
-					</div>
+					</a>
 				</li>
 				<li class="list-item">
-					<div class="list-inner">
+					<a class="list-inner" href="/case-studies">
 						<div class="list-ico"></div>
 						<div class="list-name">Case studies</div>
-					</div>
+					</a>
 				</li>
 				<li class="list-item">
-					<div class="list-inner">
+					<a class="list-inner" href="/features/for-developers">
 						<div class="list-ico"></div>
 						<div class="list-name">Technical features</div>
-					</div>
+					</a>
 				</li>
 			</ul>
 			<ul class="list technologies">

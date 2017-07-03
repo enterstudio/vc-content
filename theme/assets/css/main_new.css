@@ -957,8 +957,14 @@ a
 .learn-more .features .list-inner
 {
 	background: #f89406;
+	display: block;
 	border-radius: 5px;
 	padding: 20px;
+}
+
+.no-touch .learn-more .features .list-inner:hover
+{
+	background: #ea5564;
 }
 
 .learn-more .features .list-ico
