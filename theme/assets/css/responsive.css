@@ -3028,6 +3028,44 @@
         width: 100%;
     }
 
+    .new .banner .banner-actions
+    {
+    	-webkit-flex-direction: column;
+    			flex-direction: column;
+    }
+
+    .new .enterprise-edition .list-item
+    {
+    	-webkit-flex-direction: column;
+    			flex-direction: column;
+    }
+
+    .new .enterprise-edition .list-ico
+    {
+    	margin: 0 0 15px;
+    }
+
+    .new .enterprise-advantages .advantage-ico
+    {
+    	display: none;
+    }
+
+    .learn-more .features .list-item
+    {
+    	width: 100%;
+    }
+
+    .new .try .section-inner
+    {
+    	-webkit-flex-direction: column;
+    			flex-direction: column;
+    }
+
+    .new .try .try-t
+    {
+    	margin: 0 0 20px;
+    }
+
     .new .customers .list
     {
     	margin: 0;
