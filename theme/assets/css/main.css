@@ -1676,18 +1676,6 @@ textarea.__error
     font-family: 'Roboto';
     margin: 0 0 -30px;
     padding: 60px 0;
-
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-
-    -webkit-flex-direction: column;
-            flex-direction: column;
-
-    -webkit-flex-grow: 1;
-            flex-grow: 1;
 }
 
 .blog .tabs
@@ -1930,6 +1918,7 @@ textarea.__error
 {
     background: #fff;
     box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    width: 100%;
 
     display: -webkit-flex;
     display: -moz-flex;
@@ -1977,18 +1966,6 @@ textarea.__error
     overflow: hidden;
     padding: 25px;
     position: relative;
-
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-
-    -webkit-align-items: flex-end;
-            align-items: flex-end;
-
-    -webkit-flex-grow: 1;
-            flex-grow: 1;
 }
 
 .blog .post-media.categories
@@ -2272,12 +2249,17 @@ textarea.__error
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+
+    -webkit-align-items: center;
+            align-items: center;
+
+    -webkit-justify-content: center;
+            justify-content: center;
 }
 
 .blog .socials .list-ico
 {
     font-size: 17px;
-    margin: auto;
 }
 
 .blog .socials .fb .list-link
@@ -2361,12 +2343,6 @@ textarea.__error
     right: 0;
     top: 0;
     z-index: 5;
-
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
 }
 
 .blog .post h1,
@@ -2378,6 +2354,8 @@ textarea.__error
 
 .blog .post-media h3 a
 {
+    box-sizing: border-box;
+    height: 100%;
     padding: 0 25px 20px;
 
     display: -webkit-flex;
