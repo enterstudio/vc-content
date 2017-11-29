@@ -4,7 +4,7 @@ description: Virto commerce - Enterprise .NET open-source ecommerce cloud platf
 date: 2014-01-30
 permalink: vc-comunity
 ---
-<div ng-app="storefrontApp" ng-controller="communityController" class="vc-comunity">
+<div id="vc-community.tpl.md" type="text/ng-template" class="vc-comunity">
     <div class="bg-banner">
         <div class="banner-inner __responsive">
             <div class="banner-t">Virto commerce community</div>
