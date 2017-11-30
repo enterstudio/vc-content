@@ -1,0 +1,97 @@
+<div id="community-manager.tpl.html" type="text/ng-template">
+
+	<ul class="nav nav-tabs">
+		<li style="cursor:pointer;" ng-click="$ctrl.selectedModule('becomeContributor');"
+			ng-class="{active: $$ngOutlet.$$componentName === 'becomeContributor'}">
+			<a ng-link="['MyLists']">{{'My lists'}}</a>
+		</li>
+		<li style="cursor:pointer;" ng-click="$ctrl.selectTab('friendsLists');"
+			ng-class="{active: $$ngOutlet.$$componentName === 'vcAccountFriendsLists'}">
+			<a ng-link="['FriendsLists']">{{'Friends lists'}}</a>
+		</li>
+	</ul>
+	<ul class="list">
+		<li class="list-item">
+			<div class="list-inner">
+				<div class="list-img">
+					<vc-contrib-lab></vc-contrib-lab>
+					<img src="become-ico.png" alt="" class="list-ico">
+				</div>
+				<div class="list-t">{{'Become a contributor'}}</div>
+				<div class="list-descr">
+					{{'If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.'}}
+				</div>
+				<div class="list-actions">
+					<a ng-link="['BecomeContributor']" class="button fill">{{'Start'}}</a>
+				</div>
+			</div>
+		</li>
+		<li class="list-item">
+			<div class="list-inner">
+				<div class="list-img">
+					<img src="licence-ico.png" alt="" class="list-ico">
+				</div>
+				<div class="list-t">Get lisence</div>
+				<div class="list-descr">
+					Lorem Ipsum has been the industry's standard dummy text, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</div>
+				<div class="list-actions">
+					<a ng-link="['BecomeContributor']" href="/vc-comunity/become-contributor" class="button fill">Start</a>
+				</div>
+			</div>
+		</li>
+		<li class="list-item">
+			<div class="list-inner">
+				<div class="list-img">
+					<img src="become-2-ico.png" alt="" class="list-ico">
+				</div>
+				<div class="list-t">Become a contributor</div>
+				<div class="list-descr">
+					Lorem Ipsum has been the industry's standard dummy text, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</div>
+				<div class="list-actions">
+					<a ng-link="['BecomeContributor']" href="/vc-comunity/become-contributor" class="button fill">Start</a>
+				</div>
+			</div>
+		</li>
+		<li class="list-item">
+			<div class="list-inner">
+				<div class="list-img">
+					<img src="resource-ico.png" alt="" class="list-ico">
+				</div>
+				<div class="list-t">Community resources</div>
+				<div class="list-descr">
+					<ul>
+						<li>
+							<a href="/docs">Documentation</a>
+						</li>
+						<li>
+							<a href="/roadmap">Roadmap</a>
+						</li>
+						<li>
+							<a href="https://github.com/VirtoCommerce/vc-platform">Github repisitories structure</a>
+						</li>
+						<li>
+							<a href="#">Stackoverflow channel</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li class="list-item">
+			<div class="list-inner">
+				<div class="list-img">
+					<img src="app-ico.png" alt="" class="list-ico">
+				</div>
+				<div class="list-t">Add app to marketplace</div>
+				<div class="list-descr">
+					Lorem Ipsum has been the industry's standard dummy text, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</div>
+				<div class="list-actions">
+					<a ng-link="['AddToMarket']" href="/vc-comunity/become-contributor" class="button fill">Start</a>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<ng-outlet></ng-outlet>
+</div>

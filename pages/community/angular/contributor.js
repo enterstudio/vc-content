@@ -5,9 +5,10 @@ storefrontApp.controller('contributorController', ['$scope', '$window', '$timeou
     function initialize() {
 
         customerService.getCurrentCustomer().then(function (customer) {
-            if (customer.data.userName == "Anonymous") {
+            if (customer.data.userName === "Anonymous") {
                 document.location.href = "account/login";
-            };
+            }
+
             $scope.user_name = customer.data.firstName;
             $scope.reloadContributorData();
         })
@@ -23,9 +24,9 @@ storefrontApp.controller('contributorController', ['$scope', '$window', '$timeou
     }
 
     function updateStep () {
-        if ($scope.step == 'licenseTerms')
+        if ($scope.step === 'licenseTerms')
             $scope.step = 'contactInfo';
-        else if ($scope.step == 'contactInfo')
+        else if ($scope.step === 'contactInfo')
             $scope.step = 'projectInfo'
         else {
             $scope.formCompleted = true;
