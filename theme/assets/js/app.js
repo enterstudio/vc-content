@@ -4,6 +4,7 @@ var storefrontAppDependencies = [
     'pascalprecht.translate',
     'ngSanitize',
     'ngResource',
+    'ngComponentRouter',
 ]
 var storefrontApp = angular.module('storefrontApp', storefrontAppDependencies);
 
@@ -33,6 +34,8 @@ storefrontApp.factory('httpErrorInterceptor', ['$q', '$rootScope', function ($q,
 
     return httpErrorInterceptor;
 }])
+
+storefrontApp.value('$routerRootComponent', 'communityManager');
 
 storefrontApp.config(['$httpProvider', '$translateProvider', function ($httpProvider, $translateProvider) {
     $httpProvider.interceptors.push('httpErrorInterceptor');

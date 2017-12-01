@@ -1,13 +1,5 @@
 var storefrontApp = angular.module('storefrontApp');
 
-//storefrontApp
-//    .component('vcCommunityMain', {
-//        templateUrl: "vc-community.tpl",
-//        $routeConfig: [
-//            { path: '/', name: 'Main', component: 'vcCommunity' },
-//            { path: '/friendsLists', name: 'FriendsLists', component: 'vcAccountFriendsLists' },
-//            { path: '/myLists', name: 'MyLists', component: 'vcAccountMyLists', useAsDefault: true }
-//        ],
 storefrontApp.controller('communityController', ['$scope', '$q', '$window', '$location', '$localStorage', 'communityService', 'customerService', function ($scope, $q, $window, $location, $localStorage, communityService, customerService) {
     $scope.loaded = false;
 
@@ -15,6 +7,7 @@ storefrontApp.controller('communityController', ['$scope', '$q', '$window', '$lo
         if (user.data.userName == "Anonymous") {
             document.location.href = "account/login";
         };
+        console.log(user);
 
         $scope.user = user.data;
         if (!_.isEmpty($scope.user.addresses)) {
@@ -40,6 +33,7 @@ storefrontApp.controller('communityController', ['$scope', '$q', '$window', '$lo
                         $scope.points = resp.points;
                         $scope.rating = resp.rating
                         $scope.loaded = true;
+                        console.log($scope);
                     })
                 })
             })
@@ -65,22 +59,27 @@ storefrontApp.controller('communityController', ['$scope', '$q', '$window', '$lo
         $scope.loaded = true;
     })
 }]);
+
+storefrontApp.value('$routerRootComponent', 'communityManager');
+
 storefrontApp.component('communityManager', {
-    template: '<nav>\n' +
-    '  <a ng-link="[\'Test\']">Test</a>\n' +
-    '  <a ng-link="[\'Heroes\']">Heroes</a>\n' +
-    '</nav>\n' +
-    '<ng-outlet></ng-outlet>\n',
+    templateUrl: 'themes/assets/js/community-manager.tpl.html',
     $routeConfig: [
-        { path: '/', name: 'CommunityManager', component: 'testComponent' },
+        { path: '/become-contributor', name: 'BecomeContributor', component: 'BecomeContributorComponent' },
+        { path: '/contributor-profile', name: 'ProfileManager', component: 'ProfileComponent' },
+        { path: '/get-lisence', name: 'LisenceManager', component: 'lisenceComponent' }
     ],
+    controller: ['$rootScope', 'listService', 'customerService', '$timeout', '$localStorage', function ($rootScope, listService, customerService, $timeout, $localStorage) {
+        var $ctrl = this;
+        console.log($ctrl);
+    }]
 });
 
 
 
 storefrontApp.component('testComponent', {
     template: '<span>Name: {{asdasdadsads}}</span>',
-    controller: ['$rootScope', 'listService', 'customerService', 'loadingIndicatorService', '$timeout', 'accountDialogService', '$localStorage', function ($rootScope, listService, customerService, loader, $timeout, dialogService, $localStorage) {
+    controller: ['$rootScope', function ($rootScope) {
         var $ctrl = this;
         // bindings: {
         //     hero: '=',
