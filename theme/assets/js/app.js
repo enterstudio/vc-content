@@ -5,6 +5,7 @@ var storefrontAppDependencies = [
     'ngSanitize',
     'ngResource',
     'ngComponentRouter',
+    'ui-route',
 ]
 var storefrontApp = angular.module('storefrontApp', storefrontAppDependencies);
 

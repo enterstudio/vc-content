@@ -1,0 +1,30 @@
+<div>
+    <div class="aside" data-name="profile">
+        <div class="aside-t">Profile <span ng-bind="('(completed') + ' ' + ($ctrl.percentage) + ('%)')"></span></div>
+        <div class="aside-other">
+            <span style="font-size: 12pt;font-weight: 700;" ng-bind="$ctrl.customer.fullName"></span>
+            <span ng-if="$ctrl.customer.organization" ng-bind="'(' + $ctrl.customer.organization + ')'"></span>
+        </div>
+        <p><a href="account/profile">Add info</a></p>
+        <p ng-bind="'(Point - ' + $ctrl.points + ')'"></p>
+    </div>
+    <div class="aside">
+        <div class="aside-t"><img src="so-ico.png" alt=""> Stackoverflow</div>
+        <a ng-hide="$ctrl.stackExchange" href="account/externallogin?authType=StackExchange">Link account</a>
+        <div ng-show="$ctrl.stackExchange">
+            <p>Name – <span ng-bind="$ctrl.stackExchange.userName"></span></p>
+            <p>Virtocommerce tag rating – <span ng-bind="$ctrl.stackExchange.raiting"></span></p>
+            <p>Answer – <span ng-bind="$ctrl.stackExchange.answers"></span></p>
+            <p>Questions – <span ng-bind="$ctrl.stackExchange.questions"></span></p>
+        </div>
+    </div>
+    <div class="aside">
+        <div class="aside-t"><img src="gh-ico.png" alt=""> Github</div>
+        <a ng-hide="$ctrl.github" href="account/externallogin?authType=GitHub">Link account</a>
+        <div ng-show="$ctrl.github">
+            <p>Name – <span ng-bind="$ctrl.github.userName"></span></p>
+            <p>Virto commerce rating – <span ng-bind="$ctrl.rating"></span></p>
+            <p>Pool request – <span ng-bind="$ctrl.github.poolRequest"></span></p>
+        </div>
+    </div>
+</div>
