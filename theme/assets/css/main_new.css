@@ -2825,3 +2825,167 @@ ul.breadcrumbs {
             color: #ccc;
             content: "/\00a0";
         }
+
+
+/* Glosary */
+.glosary .breadcrumbs
+{
+	padding: 0;
+}
+
+.glosary .glosary-t,
+.glosary .glosary-sub-t
+{
+	background: #eee;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 30px;
+	padding: 20px 25px;
+	text-transform: uppercase;
+}
+
+.glosary .glosary-sub-t
+{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.glosary .glosary-date
+{
+	color: #9fa3a7;
+	font-size: 14px;
+	margin: 0 0 15px;
+}
+
+.glosary .glosary-article
+{
+	margin: 0 0 50px;
+}
+
+.glosary .glosary-article .glosary-inner
+{
+	margin: 0 0 40px;
+	overflow: hidden;
+}
+
+.glosary .glosary-article .glosary-pic
+{
+	float: left;
+	margin: 0 30px 20px 0;
+	max-width: 260px;
+	width: 100%;
+}
+
+.glosary .glosary-article ol
+{
+	list-style: none;
+	counter-reset: list-num;
+	padding: 0;
+}
+
+.glosary .glosary-article ol li::before
+{
+	color: #f89406;
+	content: counter(list-num, decimal)'. ';
+	counter-increment: list-num;
+	font-weight: bold;
+}
+
+.glosary .glosary-videos
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	margin: 25px -20px;
+}
+
+.glosary .glosary-videos .list-item
+{
+	box-sizing: border-box;
+	padding: 0 20px;
+	width: 50%;
+}
+
+.glosary .glosary-videos .video
+{
+	margin: 0 0 15px;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.glosary .glosary-videos iframe
+{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.glosary .glosary-videos .button
+{
+	display: block;
+}
+
+.glosary .glosary-nav
+{
+	background: #eee;
+	padding: 20px 0;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	-webkit-justify-content: center;
+			justify-content: center;
+}
+
+.glosary .glosary-nav .button
+{
+	margin: 0 20px;
+	width: 200px;
+}
+
+@media (min-width: 768px) and (max-width: 1019px) {
+	.glosary .glosary-videos
+	{
+		-webkit-flex-direction: column;
+				flex-direction: column;
+	}
+
+	.glosary .glosary-videos .list-item
+	{
+		margin: 0 0 15px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.glosary .glosary-videos
+	{
+		-webkit-flex-direction: column;
+				flex-direction: column;
+	}
+
+	.glosary .glosary-videos .list-item
+	{
+		margin: 0 0 15px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 640px) {
+	.glosary .glosary-article .glosary-pic
+	{
+		display: block;
+		float: none;
+		margin: 0 0 20px;
+		max-width: 100%;
+		width: 100%;
+	}
+}
