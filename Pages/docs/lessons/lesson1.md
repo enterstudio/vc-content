@@ -155,8 +155,6 @@ and unpack this zip file to this folder of web server.
 ![Add virtual directory cms-content](../../../pages/assets/images/docs/add-virtual-directory-cms-content.png "Add virtual directory cms-content")
 
 The same can be done with PowerShell commands:
-* **$folder="C:\inetpub\wwwroot\storefront\App_Data\cms-content"**
-* **New-Item -ItemType directory -Path $folder -Force**
 * **New-Item -Path C:\inetpub\wwwroot\storefront\App_Data\cms-content -ItemType SymbolicLink -Value C:\inetpub\wwwroot\admin\App_Data\cms-content**
 
 Now you could first open the **VirtoCommerce Storefront** application in the browser after full modules and sample data installation on **Virtocommerce Platform** - in  the **IIS Manager** select **storefront** and click on right column to "Browse *:80(http)".
